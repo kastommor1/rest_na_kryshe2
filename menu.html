@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <title>Na_kryshe_menu</title>
+</head>
+<div id = "toTop"><p>^</p></div>
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <div class="header clearfix pagemenu">
+            <div class="garantia">
+                <img src="images/approve.png" alt="">
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    <img src="images/logotype.png" alt="">
+                </div>
+                <div class="menu">
+                    <div class="menu_list clearfix">
+                        <ul>
+                            <li><a href="http://localhost:63342/rest_na_kryshe/index.html?_ijt=94ljbqft7atm1l51fjmuuf1unh#about_us">о нас</a></li>
+                            <li><a href="http://localhost:63342/rest_na_kryshe/index.html?_ijt=94ljbqft7atm1l51fjmuuf1unh#sale">акции</a></li>
+                            <li><a href="http://localhost:63342/rest_na_kryshe/index.html?_ijt=94ljbqft7atm1l51fjmuuf1unh#menu">меню</a></li>
+                            <li><a href="http://localhost:63342/rest_na_kryshe/index.html?_ijt=94ljbqft7atm1l51fjmuuf1unh#review">отзывы</a></li>
+                            <li><a href="http://localhost:63342/rest_na_kryshe/index.html?_ijt=94ljbqft7atm1l51fjmuuf1unh#contacts">контакты</a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="contact_info  hidden_contacts">
+                <div class="contact_phones">
+                    <p>Бронирование столов</p>
+                    <p>(843)2671777</p>
+                    <p>+7 952 031-77-77</p>
+                    <p>+7 952 034-77-77</p>
+                </div>
+                <div class="contact_icons">
+                    <img src="images/contact_icon/wifi_icon.png" alt="">
+                    <img src="images/contact_icon/family_icon.png" alt="">
+                    <img src="images/contact_icon/photo_icon.png" alt="">
+                    <img src="images/contact_icon/music_icon.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <!--LEFT MENU-->
+        <div class="screen_5  screen_570px">
+            <h2><a name="menu">Меню ресторана</a></h2>
+            <hr>
+            <div class="menu_dish clearfix">
+                <div class="dish">
+                    <a  class="salad">
+                        <img src="images/menu/salad.png" alt="">
+                    </a>
+                    <p>Салаты</p>
+                </div>
+                <div class="dish">
+                    <a  class="soup">
+                        <img src="images/menu/soup.png" alt="">
+                    </a>
+                    <p>Супы</p>
+                </div>
+                <div class="dish">
+                    <a  class="hot">
+                        <img src="images/menu/spagetti.png" alt="">
+                    </a>
+                    <p>Горячие блюда</p>
+                </div>
+                <div class="dish">
+                    <a  class="pizza">
+                        <img src="images/menu/pizza.png" alt="">
+                    </a>
+                    <p>Пицца</p>
+                </div>
+                <div class="dish">
+                    <a  class="sushi">
+                        <img src="images/menu/sushi.png" alt="">
+                    </a>
+                    <p>Суши</p>
+                </div>
+                <div class="dish">
+                    <a  class="drinks">
+                        <img src="images/menu/drinks.png" alt="">
+                    </a>
+                    <p>Напитки</p>
+                </div>
+            </div>
+        </div>
+        <div class="left_menu">
+        <input type="checkbox" id="nav-toggle" hidden>
+            <nav class="nav_menu">
+                <label for="nav-toggle" class="nav-toggle" onclick>
+                    <img src="images/menu/menu_page/left/salad.png" alt="">
+                    <br>
+                    <hr>
+                    <img src="images/menu/menu_page/left/soup.png" alt="">
+                    <br>
+                    <hr>
+                    <img src="images/menu/menu_page/left/spagetti.png" alt="">
+                    <br>
+                    <hr>
+                    <img src="images/menu/menu_page/left/pizza.png" alt="">
+                    <br>
+                    <hr>
+                    <img src="images/menu/menu_page/left/sushi.png" alt="">
+                    <br>
+                    <hr>
+                    <img src="images/menu/menu_page/left/drink.png" alt="">
+                    <hr>
+
+                </label>
+                <ul>
+                    <li><a class="salad"><p>Салаты</p></a>
+                    <li><a class="soup"><p>Супы</p></a>
+                    <li><a class="hot"><p>Горячие блюда</p></a>
+                    <li><a class="pizza"><p>Пицца</p></a>
+                    <li><a class="sushi"><p>Суши</p></a>
+                    <li><a class="drinks"><p>Напитки</p></a>
+                </ul>
+            </nav>
+        </div>
+
+        <!--CONTENT-->
+        <div id="content"></div>
+        <script src="js/menu.js"></script>
+
+        <div class="screen_6 menu_form">
+            <h2>Закажите стол прямо сейчас!</h2>
+
+            <div class="form form_2 clearfix ">
+                <form name="test" method="post" action="input1.php">
+                    <input type="text" placeholder="Ваше имя" maxlength="20">
+                    <input type="number" placeholder="Ваш номер телефона" max="12">
+                    <button name="submit" type="submit">Забронировать</button>
+                </form>
+            </div>
+            <img src="images/menu/desert.png" alt="">
+        </div>
+
+        <!--FOOTER-->
+            <div class="footer">
+                <h2>Присоединяйтесь к нам в социальных сетях</h2>
+                <div class="socials clearfix">
+                    <div class="vk">
+                        <a href="https://vk.com/nakryshekazan">
+                            <img src="images/vk.png" alt="">
+                        </a>
+                    </div>
+                    <div class="insta">
+                        <a href="https://www.instagram.com/na_kryshe_restoran/">
+                            <img src="images/insta.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <p>Все права защищены.© 2017</p>
+            </div>
+
+    </div>
+
+    <script  src="js/up-to-page.js"></script>
+</body>
+</html>
