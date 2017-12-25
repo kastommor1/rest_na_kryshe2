@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden ;
+}
+
 /*FONTS*/
 @font-face {
     font-family: "Century Gothic";
@@ -305,13 +309,15 @@ hr {
 }
 
 .greenicon1 {
+            width: 220px;
             position: absolute;
             /*outline: solid 1px pink;*/
             left: 19px;
-            top: -61px;
+            top: -53px;
             z-index: -1;
 }
 .greenicon2 {
+            width: 198px;
             position: absolute;
             /*outline: solid 1px lavender;*/
             right: 67px;
@@ -319,12 +325,10 @@ hr {
             z-index: -1;
 }
 .greenicon1 img {
-                    height: 115px;
-                    width: 239px;
+                    width: 100%;
 }
 .greenicon2 img {
-                height: 119px;
-                width: 198px;
+                width: 100%;
 
 }
 
@@ -380,6 +384,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 /*SCREEN 3*/
+.screen_3{
+    overflow: hidden;
+}
+
 .screen_3 h2 {
                 margin: 1% 28% 3% 28%;
 }
@@ -728,7 +736,7 @@ video {
     width: 100%;
     height: 544px;
     position: relative;
-    margin: 4% 0 5% 0;
+    margin: 25px auto;
     overflow: hidden;
 }
 .carousel .carousel__content {
@@ -768,7 +776,7 @@ video {
 .review {
     float: left;
     text-align: center;
-    margin: 0 4%;
+    margin-left: 6%;
 }
 
 .r_text {
@@ -856,10 +864,10 @@ iframe {
     min-width: 210px;
     height: 1500px;
     position: fixed;
-    top: 29%;
+    top: 34%;
     bottom: 0;
     margin: 0;
-    left: 13%;
+    left: 6%;
     padding: 8px 15px;
     -webkit-transition: left 0.3s;
     -moz-transition: left 0.3s;
@@ -1041,6 +1049,12 @@ iframe {
 
 
 /*///////////RESPONSIVE/////////*/
+@media screen and (max-width: 1680px){
+    .nav_menu {
+        left: -1%;
+    }
+}
+
 
 @media screen and (max-width: 1440px) {
     .about_us_text {
@@ -1089,7 +1103,7 @@ iframe {
         top: 65px;
     }
     .review {
-        margin: 0 3%;
+        margin-left: 5%;
     }
     .about_us_text p {
         margin-top: 2%;
@@ -1140,9 +1154,6 @@ iframe {
         bottom: -9%;
         left: 26%;
     }
-    .review {
-        margin: 0 2.5%;
-    }
     .map_contacts img {
         top: 183%;
         left: 4%;
@@ -1168,8 +1179,15 @@ iframe {
     }
 }
 @media screen and (max-width: 1186px) {
-    .carousel1 {
-        height: 445px;
+    .carousel {
+        width: 82%;
+    }
+    .review{
+        margin-left: 11%;
+    }
+
+    .hidden {
+        display: none
     }
     .garantia img {
         margin: 28% 27% 1% 10%;
@@ -1279,11 +1297,8 @@ iframe {
     .badyan {
         display: none;
     }
-    .carousel {
-        margin: 4% 1% 5% 2%;
-    }
     .review {
-        margin: 0 2% 0 2%;
+        margin-left: 8%;
     }
     .badyan_2 {
         width: 6%;
@@ -1305,21 +1320,7 @@ iframe {
     .nav_menu {
         top: 33%;
     }
-    .carousel {
-        margin: 4% 8% 5% 10%;
-    }
 
-    .carousel {
-        width: 82%;
-    }
-
-    .review {
-        margin: 0 5% 0 5%;
-    }
-
-    .hidden {
-        display: none
-    }
     .screen_6 img {
         right: 53px;
         top: 59px;
@@ -1366,12 +1367,11 @@ iframe {
     h2 {
         font-size: 27px;
     }
-    .greenicon1 img, .greenicon2 img {
-        width: 90%;
-        height: 90%;
+    .greenicon1, .greenicon2 {
+        width: 180px;
     }
     .greenicon2 {
-        right: -21px;
+        right: 18px;
     }
     h3 {
         font-size: 15px;
@@ -1464,7 +1464,7 @@ iframe {
         top: -6px;
     }
     .review {
-        margin: 0 4% 0 4%;
+        margin-left: 6%;
     }
     .screen_7 img {
         width: 78%;
@@ -1549,9 +1549,6 @@ iframe {
     .socials img {
         width: 78%;
     }
-    .review {
-        margin: 0 2.5% 0 2.5%;
-    }
     .nav_menu {
         top: 38%;
         left: -18%;
@@ -1559,7 +1556,7 @@ iframe {
 }
 @media screen and (max-width: 910px){
     .review {
-        margin: 0 2% 0 2%;
+        margin-left: 4%;
     }
     .socials {
         margin: 1% 42% 1%;
@@ -1576,7 +1573,7 @@ iframe {
         height: 44%;
     }
     .review {
-        margin: 0 2% 0 4%;
+        margin-left: 6%;
     }
 
     .about_us_text p {
@@ -1596,16 +1593,15 @@ iframe {
     h2 {
         font-size: 26px;
     }
-    .greenicon1 img, .greenicon2 img {
-        width: 75%;
+    .greenicon1, .greenicon2 {
+        width: 155px;
     }
     .greenicon1 {
         left: 11px;
-        top: -49px;
+        top: -46px;
     }
     .greenicon2 {
-        right: -41px;
-        top: -41px;
+        top: -46px;
     }
     .footer h2 {
         font-size: 17px;
@@ -1645,8 +1641,7 @@ iframe {
         display: none;
     }
     .carousel {
-        width: 45%;
-        margin: 4% 28% 5% 28%;
+        width: 360px;
     }
     .contact_phones p {
         font-size: 13px;
@@ -1697,8 +1692,8 @@ iframe {
     .contact_info {
         width: 21%;
     }
-    .greenicon1 img, .greenicon2 img {
-        width: 60%;
+    .greenicon1, .greenicon2 {
+        width: 130px;
     }
 
     .greenicon2 {
@@ -1814,6 +1809,18 @@ iframe {
     }
 }
 @media screen and (max-width: 710px) {
+    .greenicon1, .greenicon2 {
+        width: 130px;
+    }
+
+    .greenicon2 {
+        right: 0px;
+    }
+
+    .greenicon1 {
+        left: 0px;
+    }
+
     .garantia {
         display: none;
     }
@@ -1834,7 +1841,7 @@ iframe {
         margin-right: 8.9%;
     }
     .menu hr {
-        width: 552px;
+        width: 78%;
         left: 12%;
         top: 100%;
     }
@@ -1854,7 +1861,7 @@ iframe {
     }
     .about_us_text {
         left: 10%;
-        top: 29%;
+        top: 35%;
     }
     .contact_info {
         width: 100%;
@@ -1883,27 +1890,6 @@ iframe {
     .about_us_text hr {
         margin-left: 41.5%;
     }
-    .carousel {
-        margin: 4% 26% 5% 26%;
-    }
-    .review_text img {
-        width: 73%;
-    }
-    .r_text p {
-        width: 206px;
-        font-size: 12px;
-        margin-top: 9px;
-    }
-    h3 {
-        font-size: 14px;
-    }
-    .r_text {
-        margin: -211px 38px 0 44px;
-    }
-    .carousel {
-        height: 393px;
-        margin: 4% 26% 0% 26%;
-    }
     .nav--right img, .nav--left img {
         width: 73%;
     }
@@ -1916,8 +1902,11 @@ iframe {
     .carousel1 {
         height: 268px;
     }
-    .nav_menu {
-        left: -24%;
+    .left_menu {
+        display: none;
+    }
+    .screen_570px{
+        display: block;
     }
     .hidden_contacts {
         display:none;
@@ -1931,7 +1920,7 @@ iframe {
 }
 @media screen and (max-width: 575px){
     .menu hr {
-        width: 555px;
+        width: 100%;
         left: 0%;
         top: 86%;
     }
@@ -2004,7 +1993,7 @@ iframe {
         width: 69%;
     }
     .text_screen4 {
-        margin: 3% 23% 0 23%;
+        margin: 3% 23% 0 17%;
         float: none;
         width: 100%;
         max-width: 299px;
@@ -2025,38 +2014,8 @@ iframe {
     .dish p {
         font-size: 13px;
     }
-    .carousel {
-        height: 343px;
-        margin: 4% 26% 0% 26%;
-    }
-    .review {
-        margin: 0 0 0 -7%;
-    }
-    .r_text p {
-        width: 178px;
-        font-size: 10px;
-        margin-top: 6px;
-    }
-    .r_text {
-        margin: -183px 44px 0 44px;
-    }
-    .review img {
-        width: 43%;
-    }
-    .review_text img {
-        width: 69%;
-    }
-    h3 {
-        font-size: 13px;
-    }
     .socials {
         margin: 1% 39% 1%;
-    }
-    .left_menu {
-        display: none;
-    }
-    .screen_570px{
-        display: block;
     }
     .all {
         margin: 0% 2% 0 2%;
@@ -2089,6 +2048,16 @@ iframe {
     }
     .screen_570px img:hover {
         cursor: pointer;
+    }
+}
+@media screen and (max-width: 520px){
+    .about_us_text {
+        left: 4%;
+        top: 39%;
+    }
+    .about_us_text p {
+        margin-top: 1%;
+        font-size: 11px;
     }
 }
 @media screen and (max-width: 425px){
@@ -2243,7 +2212,7 @@ iframe {
         font-size: 16px;
     }
     .text_screen4 {
-        margin: 3% 17% 0 17%;
+        margin: 3% 17% 0 10%;
         float: none;
         width: 100%;
         max-width: 268px;
@@ -2264,9 +2233,8 @@ iframe {
         margin-top: 4%;
     }
     .carousel {
-        width: 85%;
+        width: 100%;
         height: 430px;
-        margin: 4% auto;
     }
 
     .r_text {
@@ -2280,11 +2248,20 @@ iframe {
         font-size: 13px;
         margin-top: 6px;
     }
-    .review {
-        margin: 0 0 0 1%;
-    }
     .review_text img {
         width: 72%;
+    }
+}
+@media screen and (max-width: 360px){
+    .about_us_text {
+        left: 26px;
+        top: 171px;
+    }
+    .about_us_text p {
+        font-size: 14px;
+    }
+    .review{
+        margin-left: 0;
     }
 }
 @media screen and (max-width: 320px){
@@ -2361,10 +2338,9 @@ iframe {
     }
     .carousel {
         width: 98%;
-        margin: 4% 2%;
     }
     .review {
-        margin-left: -4%;
+        margin-left: -6%;
     }
 }
 
